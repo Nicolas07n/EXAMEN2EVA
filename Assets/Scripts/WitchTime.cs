@@ -28,12 +28,12 @@ public class WitchTime : MonoBehaviour
 
 
 
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.25f);
 
 
 
 
-
+        
         Time.timeScale = 1f;
 
 

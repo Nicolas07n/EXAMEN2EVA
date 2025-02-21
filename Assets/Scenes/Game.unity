@@ -832,7 +832,7 @@ GameObject:
   - component: {fileID: 1940118831}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -860,7 +860,7 @@ MonoBehaviour:
     m_Bits: 8
   jumpClip: {fileID: 8300000, guid: bcdc1e25b02c41f44bd36032ca03b914, type: 3}
   fireworkPrefab: {fileID: 739398319963719684, guid: fb1f5164540ac0948b315c441e2fa7e9, type: 3}
-  maxJumps: 10
+  maxJumps: 2
 --- !u!70 &1940118826
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -964,15 +964,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1327220661, guid: 992dca76034467d439c97ae6cdb946c2, type: 3}
+  m_Sprite: {fileID: 180106281, guid: 4cdd4a45b86fdfd4996bca20a79f2664, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.85, y: 1.69}
+  m_Size: {x: 0.16, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1940118829

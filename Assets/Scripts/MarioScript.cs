@@ -11,12 +11,14 @@ public class MarioScript : MonoBehaviour
     public LayerMask groundMask;
     public AudioClip jumpClip;
     public GameObject fireworkPrefab;
+    public int maxJumps = 2;
 
     private Rigidbody2D rb;
     private SpriteRenderer _rend;
     private Animator _animator;
     private Vector2 dir;
     private bool _intentionToJump;
+    private int _currentJumps;
 
     // Start is called before the first frame update
     void Start()
@@ -78,8 +80,14 @@ public class MarioScript : MonoBehaviour
 
         rb.velocity = nVel;
 
+        if (grnd)
+        {
+            _currentJumps = 0;
 
-        if (_intentionToJump && grnd)
+        }// Reinicio en el suelo
+
+
+            if (_intentionToJump && grnd)
         {
             _animator.Play("jumpAnimation");
             AddJumpForce();
@@ -94,6 +102,7 @@ public class MarioScript : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.AddForce(Vector2.up * jumpForce * rb.gravityScale, ForceMode2D.Impulse);
         AudioManager.instance.PlayAudio(jumpClip, "jumpSound");
+        _currentJumps++;
     }
 
     private bool IsGrounded()

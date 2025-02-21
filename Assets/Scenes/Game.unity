@@ -860,6 +860,7 @@ MonoBehaviour:
     m_Bits: 8
   jumpClip: {fileID: 8300000, guid: bcdc1e25b02c41f44bd36032ca03b914, type: 3}
   fireworkPrefab: {fileID: 739398319963719684, guid: fb1f5164540ac0948b315c441e2fa7e9, type: 3}
+  maxJumps: 10
 --- !u!70 &1940118826
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1035,7 +1036,7 @@ GameObject:
   - component: {fileID: 2004136431}
   - component: {fileID: 2004136430}
   - component: {fileID: 2004136432}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}

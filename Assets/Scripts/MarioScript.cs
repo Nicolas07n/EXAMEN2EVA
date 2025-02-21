@@ -87,7 +87,7 @@ public class MarioScript : MonoBehaviour
         }// Reinicio en el suelo
 
 
-            if (_intentionToJump && grnd)
+        if (_intentionToJump && _currentJumps < maxJumps)
         {
             _animator.Play("jumpAnimation");
             AddJumpForce();

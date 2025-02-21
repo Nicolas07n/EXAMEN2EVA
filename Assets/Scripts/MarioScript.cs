@@ -121,16 +121,6 @@ public class MarioScript : MonoBehaviour
         Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
     }
 
-    IEnumerable SlowMotion()
-    {
-        Time.timeScale = 0.5f;
-
-        yield return new WaitForSecondsRealtime(1.0f);
-
-        Time.timeScale = 1.0f;
-
-
-
-    }
+   
 
 }
